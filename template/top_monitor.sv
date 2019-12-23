@@ -1,7 +1,7 @@
 `ifndef ${TOP_MONITOR}_SV
 `define ${TOP_MONITOR}_SV
 
-class ${top_monitor} extends umvm_monitor;
+class ${top_monitor} extends uvm_monitor;
 
     virtual ${top_if} vif;
 

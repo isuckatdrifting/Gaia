@@ -14,7 +14,7 @@ class ${TOP_SEQUENCE}_0 extends uvm_sequence #(top_transaction);
         repeat(10) begin
             `uvm_do(a_trans)
         end
-        #{TIMEGAP_OF_SEQUENCE}; //IDLE time to observe the finish of waveform
+        #${TIMEGAP_OF_SEQUENCE}; //IDLE time to observe the finish of waveform
     endtask
 
     `uvm_object_utils(${TOP_SEQUENCE}_0)
@@ -40,7 +40,7 @@ class ${TOP_SEQUENCE}_1 extends uvm_sequence #(top_transaction);
         repeat(seq_num) begin
             `uvm_do(a_trans)
         end
-        #{TIMEGAP_OF_SEQUENCE}; //IDLE time to observe the finish of waveform
+        #${TIMEGAP_OF_SEQUENCE}; //IDLE time to observe the finish of waveform
     endtask
 
     `uvm_object_utils(${TOP_SEQUENCE}_1)
